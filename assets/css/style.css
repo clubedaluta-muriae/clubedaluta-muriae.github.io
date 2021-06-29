@@ -1,0 +1,5 @@
+@media (max-width: 991px) {
+  body .icone-treino {
+    width: 20rem !important;
+  }
+}
