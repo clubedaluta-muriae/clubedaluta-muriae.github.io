@@ -298,7 +298,7 @@
                 <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Motivação</a></li>
                 <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Preço</a></li>
                 <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Contato</a></li>
-                <li class="list-inline-item me3 me-sm-4"><div class="fb-share-button" data-href="https://clubedaluta-muriae.github.io/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fclubedaluta-muriae.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div></li>
+                <li class="list-inline-item me3 me-sm-4"><div class="fb-share-button" data-href="https://clubedaluta-muriae.github.io/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fclubedaluta-muriae.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>  </li>
 
               </ul>  
             </div>
@@ -357,6 +357,8 @@
           //conteúdo que será compartilhado: Título da página + URL
           var conteudo = encodeURIComponent(document.title + " " + window.location.href);
           //altera a URL do botão
+          window.open('fb://page/130678573660277', '_system');
+        
           document.getElementById("shared-whats").href = "https://api.whatsapp.com/send?text=https://clubedaluta-muriae.github.io/" + conteudo;
           document.getElementById("facebook-shared").href = "https://www.facebook.com/sharer/sharer.php?u=https://clubedaluta-muriae.github.io/";
           document.getElementById("twitter-shared").href = "https://twitter.com/intent/tweet?url=https://clubedaluta-muriae.github.io/&text=Venha%20mudar%20de%20vida%20e%20se%20preparar%20para%20vencer!%0A#ClubeDaLutaMuriae%0A#gelioleal%0A#muriae";
