@@ -2,4 +2,7 @@
   body .icone-treino {
     width: 20rem !important;
   }
+  body #btn_compartilhar {
+    margin-top: 15px;
+  }
 }

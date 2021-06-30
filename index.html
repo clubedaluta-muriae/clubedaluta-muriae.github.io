@@ -89,9 +89,9 @@
               <a class="dropdown btn btn-lg btn-success rounded-pill order-0" title="gelioleal" target="_blank" href="https://linkwpp.com/w/UFTZiw8l"  rel="nofollow"><img width="18" src="assets/img/icons/whatsapp.png" alt="whatsapp"> Contato</a>
 
             </form>
-            <form class="ps-lg-5">
+            <form class="ps-lg-5" id='btn_compartilhar'>
               <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-light rounded-pill order-0 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   <img width="18" src="assets/img/icons/share.png" alt="shared" > Compartilhar
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -358,7 +358,7 @@
           var conteudo = encodeURIComponent(document.title + " " + window.location.href);
           //altera a URL do botão
           window.open('fb://page/130678573660277', '_system');
-        
+
           document.getElementById("shared-whats").href = "https://api.whatsapp.com/send?text=https://clubedaluta-muriae.github.io/" + conteudo;
           document.getElementById("facebook-shared").href = "https://www.facebook.com/sharer/sharer.php?u=https://clubedaluta-muriae.github.io/";
           document.getElementById("twitter-shared").href = "https://twitter.com/intent/tweet?url=https://clubedaluta-muriae.github.io/&text=Venha%20mudar%20de%20vida%20e%20se%20preparar%20para%20vencer!%0A#ClubeDaLutaMuriae%0A#gelioleal%0A#muriae";
