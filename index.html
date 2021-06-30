@@ -65,7 +65,9 @@
 
 
   <body>
-
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v11.0" nonce="mAl9obFJ"></script>
+    
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->
@@ -84,8 +86,28 @@
               <li class="nav-item" data-anchor="data-anchor"><a title="academia" class="nav-link fw-medium" href="#preco">Preços</a></li>
             </ul>
             <form class="ps-lg-5">
-              <a class="btn btn-lg btn-success rounded-pill order-0" title="gelioleal" target="_blank" href="https://linkwpp.com/w/UFTZiw8l"><img width="18   " src="assets/img/icons/whatsapp.png" alt="whatsapp" rel="nofollow"> Contato</a>
-              <a class="btn btn-lg btn-success rounded-pill order-0" id='shared-whats' title="gelioleal" target="_blank" href=""><img width="18   " src="assets/img/icons/whatsapp.png" alt="whatsapp" rel="nofollow"> Contato</a>
+              <a class="dropdown btn btn-lg btn-success rounded-pill order-0" title="gelioleal" target="_blank" href="https://linkwpp.com/w/UFTZiw8l"  rel="nofollow"><img width="18" src="assets/img/icons/whatsapp.png" alt="whatsapp"> Contato</a>
+
+            </form>
+            <form class="ps-lg-5">
+              <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img width="18" src="assets/img/icons/share.png" alt="shared" > Compartilhar
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+               
+                  <li>
+                    <a class="dropdown-item  " id='shared-whats' rel="nofollow" title="gelioleal" target="_blank" href=""><img width="18" src="assets/img/icons/whatsapp.png" alt="gelioleal" rel="nofollow"> whatsapp</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item  " id='facebook-shared' rel="nofollow" title="gelioleal" target="_blank" href=""><img width="18" src="assets/img/icons/facebook.png" alt="gelioleal" rel="nofollow"> Facebook</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item  " id='twitter-shared' rel="nofollow" title="gelioleal" target="_blank" href=""><img width="18" src="assets/img/icons/twitter.png" alt="gelioleal" rel="nofollow"> Twitter</a>
+
+                  </li>
+                </ul>
+              </div>
   
             </form>
           </div>
@@ -261,6 +283,7 @@
       <section class="py-8 bg-1000">
 
         <div class="container">
+  
           <div class="row flex-center">
             <div class="col-auto mb-5"><a class="pe-2 d-flex align-items-center text-decoration-none fw-bold fs-3" href="#">
                 <div class="text-danger">Clube</div>
@@ -275,6 +298,8 @@
                 <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Motivação</a></li>
                 <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Preço</a></li>
                 <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Contato</a></li>
+                <li class="list-inline-item me3 me-sm-4"><div class="fb-share-button" data-href="https://clubedaluta-muriae.github.io/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fclubedaluta-muriae.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div></li>
+
               </ul>  
             </div>
           </div>
@@ -333,6 +358,8 @@
           var conteudo = encodeURIComponent(document.title + " " + window.location.href);
           //altera a URL do botão
           document.getElementById("shared-whats").href = "https://api.whatsapp.com/send?text=https://clubedaluta-muriae.github.io/" + conteudo;
+          document.getElementById("facebook-shared").href = "https://www.facebook.com/sharer/sharer.php?u=https://clubedaluta-muriae.github.io/";
+          document.getElementById("twitter-shared").href = "https://twitter.com/intent/tweet?url=https://clubedaluta-muriae.github.io/&text=Venha%20mudar%20de%20vida%20e%20se%20preparar%20para%20vencer!%0A#ClubeDaLutaMuriae%0A#gelioleal%0A#muriae";
       }, false);
     </script>
   </body>
